@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /assets/vendor/
+Disallow: /assets/scss/
+
+Sitemap: https://www.pix-spot.com/sitemap.xml

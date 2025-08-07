@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- الصفحة الرئيسية مع الصور -->
+  <url>
+    <loc>https://www.pix-spot.com/</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/logo.png</image:loc>
+      <image:caption>شعار شركة Pixspot للدعاية والإعلان</image:caption>
+      <image:title>Pixspot Logo - شعار بيكس سبوت</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/abstract/abstract.PNG</image:loc>
+      <image:caption>تصميم جرافيكي إبداعي من Pixspot</image:caption>
+      <image:title>Abstract Design - تصميم إبداعي</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة تصميم الشعارات -->
+  <url>
+    <loc>https://www.pix-spot.com/services/logos.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/logos/bulk burger 2_1.jpg</image:loc>
+      <image:caption>تصميم شعار مطعم Bulk Burger - لوجو مطاعم البرجر احترافي من Pixspot</image:caption>
+      <image:title>Bulk Burger Logo Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/logos/OnTarget Pharm logo.png</image:loc>
+      <image:caption>تصميم شعار صيدلية OnTarget Pharm - لوجو طبي احترافي من Pixspot</image:caption>
+      <image:title>OnTarget Pharm Medical Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/logos/EsnoLogo-01.png</image:loc>
+      <image:caption>تصميم شعار شركة Esno - لوجو احترافي من Pixspot</image:caption>
+      <image:title>Esno Company Logo Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/logos/logo transparent.png</image:loc>
+      <image:caption>تصميم شعار شفاف عالي الجودة من Pixspot</image:caption>
+      <image:title>Transparent Logo Design</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة الهدايا الدعائية -->
+  <url>
+    <loc>https://www.pix-spot.com/services/gifts.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/gifts/CLASS A SETS CATALOG_2.jpg</image:loc>
+      <image:caption>كتالوج هدايا دعائية فئة A - مجموعة متنوعة من الهدايا الترويجية</image:caption>
+      <image:title>Class A Promotional Gifts Catalog</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/gifts/CLASS B SETS CATALOG_2.jpg</image:loc>
+      <image:caption>كتالوج هدايا دعائية فئة B - هدايا شركات احترافية</image:caption>
+      <image:title>Class B Corporate Gifts Catalog</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/gifts/CLASS C SETS CATALOG_2.jpg</image:loc>
+      <image:caption>كتالوج هدايا دعائية فئة C - هدايا ترويجية اقتصادية</image:caption>
+      <image:title>Class C Promotional Gifts Catalog</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة الحفر بالليزر -->
+  <url>
+    <loc>https://www.pix-spot.com/services/laser.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/laser/IMG-20250629-WA0031.jpg</image:loc>
+      <image:caption>أعمال الحفر بالليزر على الخشب والمعادن من Pixspot</image:caption>
+      <image:title>Laser Engraving on Wood and Metal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/laser/IMG-20250629-WA0032.jpg</image:loc>
+      <image:caption>تقطيع وحفر ليزر دقيق على مواد مختلفة</image:caption>
+      <image:title>Precision Laser Cutting and Engraving</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة المطبوعات -->
+  <url>
+    <loc>https://www.pix-spot.com/services/prints.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/prints/IMG-20250701-WA0005.jpg</image:loc>
+      <image:caption>طباعة بروشورات وفلايرز دعائية عالية الجودة</image:caption>
+      <image:title>High Quality Brochures and Flyers Printing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/prints/IMG-20250701-WA0006.jpg</image:loc>
+      <image:caption>طباعة كروت شخصية وبزنس كاردز احترافية</image:caption>
+      <image:title>Professional Business Cards Printing</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة يفط ولافتات -->
+  <url>
+    <loc>https://www.pix-spot.com/services/signs.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/signs/IMG-20250629-WA0008.jpg</image:loc>
+      <image:caption>لافتات إعلانية مضيئة للمحلات التجارية</image:caption>
+      <image:title>Illuminated Commercial Signs</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/signs/IMG-20250629-WA0011.jpg</image:loc>
+      <image:caption>يفط أكريليك وفليكس عالية الجودة</image:caption>
+      <image:title>High Quality Acrylic and Flex Signs</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة التصوير الفوتغرافي -->
+  <url>
+    <loc>https://www.pix-spot.com/services/photography.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/photography/123A0021.webp</image:loc>
+      <image:caption>تصوير فوتغرافي احترافي للمنتجات والفعاليات</image:caption>
+      <image:title>Professional Product and Event Photography</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/photography/123A9009.webp</image:loc>
+      <image:caption>تصوير بورتريه وتصوير تجاري احترافي</image:caption>
+      <image:title>Professional Portrait and Commercial Photography</image:title>
+    </image:image>
+  </url>
+
+  <!-- صفحة تصميم المواقع -->
+  <url>
+    <loc>https://www.pix-spot.com/services/websites.html</loc>
+    <lastmod>2025-01-27</lastmod>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/websites/23db68adc34a9dad0d6815443a007aab.jpg</image:loc>
+      <image:caption>تصميم مواقع إلكترونية احترافية ومتجاوبة</image:caption>
+      <image:title>Professional Responsive Website Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/portfolio/websites/2aae6dd79f267ff698c0e57b357ce7a2.jpg</image:loc>
+      <image:caption>تطوير مواقع ومتاجر إلكترونية متكاملة</image:caption>
+      <image:title>Complete E-commerce Website Development</image:title>
+    </image:image>
+  </url>
+
+</urlset>

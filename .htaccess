@@ -1,0 +1,215 @@
+# ==================================================================
+# .htaccess - Pixspot Website Configuration
+# ==================================================================
+
+# Force HTTPS
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Force www
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==================================================================
+# MIME TYPES AND ENCODING
+# ==================================================================
+<IfModule mod_mime.c>
+    # Web fonts
+    AddType application/font-woff2 .woff2
+    AddType application/font-woff .woff
+    AddType application/vnd.ms-fontobject .eot
+    AddType application/x-font-ttf .ttf
+    AddType image/svg+xml .svg
+    
+    # Modern image formats
+    AddType image/webp .webp
+    AddType image/avif .avif
+</IfModule>
+
+# ==================================================================
+# COMPRESSION
+# ==================================================================
+<IfModule mod_deflate.c>
+    # Compress HTML, CSS, JavaScript, Text, XML and fonts
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+    AddOutputFilterByType DEFLATE application/x-font
+    AddOutputFilterByType DEFLATE application/x-font-opentype
+    AddOutputFilterByType DEFLATE application/x-font-otf
+    AddOutputFilterByType DEFLATE application/x-font-truetype
+    AddOutputFilterByType DEFLATE application/x-font-ttf
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE font/opentype
+    AddOutputFilterByType DEFLATE font/otf
+    AddOutputFilterByType DEFLATE font/ttf
+    AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE image/x-icon
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+
+    # Remove browser bugs (only needed for really old browsers)
+    BrowserMatch ^Mozilla/4 gzip-only-text/html
+    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+    Header append Vary User-Agent
+</IfModule>
+
+# ==================================================================
+# BROWSER CACHING
+# ==================================================================
+<IfModule mod_expires.c>
+    ExpiresActive on
+
+    # Images
+    ExpiresByType image/jpg "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 1 month"
+    ExpiresByType image/gif "access plus 1 month"
+    ExpiresByType image/png "access plus 1 month"
+    ExpiresByType image/webp "access plus 1 month"
+    ExpiresByType image/svg+xml "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+
+    # Video
+    ExpiresByType video/webm "access plus 1 month"
+    ExpiresByType video/mp4 "access plus 1 month"
+    ExpiresByType video/avi "access plus 1 month"
+
+    # Fonts
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+    ExpiresByType application/x-font-ttf "access plus 1 year"
+    ExpiresByType font/opentype "access plus 1 year"
+
+    # CSS, JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+
+    # Others
+    ExpiresByType application/pdf "access plus 1 month"
+    ExpiresByType text/x-javascript "access plus 1 month"
+    ExpiresByType application/x-shockwave-flash "access plus 1 month"
+    ExpiresByType image/x-icon "access plus 1 year"
+    ExpiresByType text/css "access plus 1 year"
+
+    # Default
+    ExpiresDefault "access plus 2 days"
+</IfModule>
+
+# ==================================================================
+# SECURITY HEADERS
+# ==================================================================
+<IfModule mod_headers.c>
+    # X-Frame-Options
+    Header always set X-Frame-Options DENY
+
+    # X-Content-Type-Options
+    Header always set X-Content-Type-Options nosniff
+
+    # X-XSS-Protection
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Referrer-Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Content Security Policy
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com https://www.googletagmanager.com https://www.google-analytics.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';"
+
+    # Remove Server header
+    Header unset Server
+    Header unset X-Powered-By
+</IfModule>
+
+# ==================================================================
+# FILE ACCESS RESTRICTIONS
+# ==================================================================
+# Prevent access to .htaccess and other sensitive files
+<Files ".htaccess">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.log">
+    Order allow,deny
+    Deny from all
+</Files>
+
+<Files "*.ini">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# ==================================================================
+# ERROR PAGES
+# ==================================================================
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 500 /500.html
+
+# ==================================================================
+# UTF-8 ENCODING
+# ==================================================================
+AddDefaultCharset UTF-8
+
+# ==================================================================
+# IMAGE OPTIMIZATION
+# ==================================================================
+# Enable modern image formats with fallback
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    
+    # Serve WebP images if supported and available
+    RewriteCond %{HTTP_ACCEPT} image/webp
+    RewriteCond %{REQUEST_FILENAME} \.(jpe?g|png)$
+    RewriteCond %{REQUEST_FILENAME}\.webp -f
+    RewriteRule ^(.+)\.(jpe?g|png)$ $1.$2.webp [T=image/webp,E=accept:1]
+</IfModule>
+
+# Set proper headers for images
+<IfModule mod_headers.c>
+    # WebP images
+    <FilesMatch "\.(webp)$">
+        Header set Content-Type "image/webp"
+        Header set Cache-Control "public, max-age=31536000"
+        Header set Expires "access plus 1 year"
+    </FilesMatch>
+    
+    # Regular images
+    <FilesMatch "\.(jpg|jpeg|png|gif|ico|svg)$">
+        Header set Cache-Control "public, max-age=31536000"
+        Header set Expires "access plus 1 year"
+    </FilesMatch>
+    
+    # Prevent hotlinking of images
+    SetEnvIfNoCase Referer "^https://www\.pix-spot\.com" local_ref=1
+    <FilesMatch "\.(jpg|jpeg|png|gif|webp)$">
+        Header set X-Content-Type-Options "nosniff"
+        Order Allow,Deny
+        Allow from env=local_ref
+        Allow from 127.0.0.1
+        Allow from localhost
+    </FilesMatch>
+</IfModule>
+
+# ==================================================================
+# ADDITIONAL OPTIMIZATIONS
+# ==================================================================
+# Remove ETag
+FileETag None
+
+# Server-side includes (SSI)
+Options +Includes
+
+# Follow symbolic links
+Options +FollowSymLinks
+
+# Disable server signature
+ServerSignature Off
