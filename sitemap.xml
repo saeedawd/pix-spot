@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- الصفحة الرئيسية -->
   <url>
@@ -7,6 +8,11 @@
     <lastmod>2025-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.00</priority>
+    <image:image>
+      <image:loc>https://www.pix-spot.com/assets/img/logo.PNG</image:loc>
+      <image:title>Pixspot - شركة دعاية وإعلان متكاملة</image:title>
+      <image:caption>شعار شركة Pixspot للدعاية والإعلان - 13 عام خبرة</image:caption>
+    </image:image>
   </url>
 
   <!-- الصفحات الأساسية -->
