@@ -4,12 +4,12 @@
   "description": "شركة دعاية وإعلان متكاملة مع خبرة 13 عام في التصميم والطباعة والتسويق الرقمي",
   "icons": [
     {
-      "src": "assets/img/logo.PNG",
+      "src": "https://www.pix-spot.com/assets/img/logo.PNG",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "assets/img/logo.PNG",
+      "src": "https://www.pix-spot.com/assets/img/logo.PNG",
       "sizes": "512x512",
       "type": "image/png"
     }
