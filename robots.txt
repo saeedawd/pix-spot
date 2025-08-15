@@ -6,6 +6,9 @@ Disallow: /assets/scss/
 # Allow access to logo and images
 Allow: /assets/img/logo.PNG
 Allow: /assets/img/
+Allow: /favicon.ico
+Allow: /favicon.txt
+Allow: /manifest.json
 
 Sitemap: https://www.pix-spot.com/sitemap.xml
 Sitemap: https://www.pix-spot.com/images-sitemap.xml

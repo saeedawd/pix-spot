@@ -1,0 +1,15 @@
+Pixspot Favicon Information
+==========================
+
+Website: https://www.pix-spot.com
+Favicon URL: https://www.pix-spot.com/favicon.ico
+Logo URL: https://www.pix-spot.com/assets/img/logo.PNG
+
+Company: Pixspot - شركة دعاية وإعلان متكاملة
+Location: الجيزة، مصر
+Services: تصميم شعارات، طباعة، دعاية وإعلان، تسويق رقمي، هدايا دعائية، حفر ليزر
+
+Favicon is available at: /favicon.ico
+Logo is available at: /assets/img/logo.PNG
+
+This file helps search engines locate and index the favicon properly.

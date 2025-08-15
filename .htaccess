@@ -35,7 +35,19 @@ RewriteRule ^(.*)$ $1.html [NC,L]
     # Modern image formats
     AddType image/webp .webp
     AddType image/avif .avif
+    
+    # Favicon
+    AddType image/x-icon .ico
 </IfModule>
+
+# ==================================================================
+# FAVICON HANDLING
+# ==================================================================
+# Ensure favicon.ico is served correctly
+<Files "favicon.ico">
+    Header set Cache-Control "public, max-age=31536000"
+    Header set Content-Type "image/x-icon"
+</Files>
 
 # ==================================================================
 # COMPRESSION

@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="https://www.pix-spot.com/assets/img/logo.PNG"/>
+            <square150x150logo src="/favicon.ico"/>
             <TileColor>#767052</TileColor>
         </tile>
     </msapplication>
